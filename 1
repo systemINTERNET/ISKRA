@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИСКРА | Технология Абсолютной Приватности</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --accent: #ff4d00;
+            --text: #e0e0e0;
+            --secondary: #1a1a1a;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+            border-bottom: 1px solid var(--accent);
+        }
+        .logo {
+            font-size: 5rem;
+            font-weight: 800;
+            letter-spacing: 15px;
+            color: var(--accent);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            border-left: 4px solid var(--accent);
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: var(--secondary);
+            padding: 30px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            opacity: 0.5;
+            border-top: 1px solid #333;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ИСКРА</div>
+    <p style="font-size: 1.5rem; max-width: 700px;">
+        Первое и единственное на планете абсолютно приватное независимое решение.
+    </p>
+    <a href="#about" class="btn">Инициализировать протокол</a>
+</header>
+
+<section class="container" id="about">
+    <h2>Беспрецедентная Технология</h2>
+    <p>Проект <span class="highlight">ИСКРА</span> — это не просто инструмент, это архитектурный сдвиг. Мы создали комплекс технологий, который делает классические методы блокировки, фильтрации трафика или деанонимизации технически невозможными.</p>
+    
+    <div class="grid">
+        <div class="card">
+            <h3>Hardwire Stealth</h3>
+            <p>Наш протокол маскирует трафик под хаотичный белый шум, который невозможно идентифицировать методами DPI (Deep Packet Inspection).</p>
+        </div>
+        <div class="card">
+            <h3>Zero-Trust Core</h3>
+            <p>Система не доверяет ни одному узлу связи. Данные фрагментируются и передаются по динамическим цепочкам, исключая централизацию.</p>
+        </div>
+        <div class="card">
+            <h3>Квантовая устойчивость</h3>
+            <p>Использование алгоритмов шифрования, устойчивых к дешифровке даже перспективными вычислительными мощностями.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container" style="background: var(--secondary);">
+    <h2>Функционал системы</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Интеллектуальный обход</h3>
+            <p>Автоматическая адаптация под текущую топологию сети. Блокировки распознаются и обходятся в реальном времени без участия пользователя.</p>
+        </div>
+        <div class="card">
+            <h3>Абсолютная изоляция</h3>
+            <p>Ваша активность остается внутри зашифрованного периметра. Ни провайдер, ни внешние трекеры не получают доступа даже к метаданным.</p>
+        </div>
+        <div class="card">
+            <h3>Мгновенный отклик</h3>
+            <p>Несмотря на многослойное шифрование, ИСКРА оптимизирует маршруты для достижения минимальных задержек (Latency).</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Преимущества над аналогами</h2>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <thead>
+            <tr style="text-align: left; border-bottom: 2px solid var(--accent);">
+                <th style="padding: 15px;">Параметр</th>
+                <th style="padding: 15px;">Обычные VPN/Proxy</th>
+                <th style="padding: 15px; color: var(--accent);">ИСКРА</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid #333;">
+                <td style="padding: 15px;">Устойчивость к DPI</td>
+                <td style="padding: 15px;">Низкая (легко блокируется)</td>
+                <td style="padding: 15px;">Абсолютная</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #333;">
+                <td style="padding: 15px;">Логирование</td>
+                <td style="padding: 15px;">Часто присутствует</td>
+                <td style="padding: 15px;">Технически невозможно</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #333;">
+                <td style="padding: 15px;">Зависимость от ЦОД</td>
+                <td style="padding: 15px;">Высокая</td>
+                <td style="padding: 15px;">Полная децентрализация</td>
+            </tr>
+            <tr>
+                <td style="padding: 15px;">Срок жизни соединения</td>
+                <td style="padding: 15px;">До момента блокировки IP</td>
+                <td style="padding: 15px;">Неограничен</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+    © 2026 ИСКРА. Настоящая приватность требует радикальных решений.
+</footer>
+
+</body>
+</html>
+

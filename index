@@ -3,184 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ИСКРА | Технология Абсолютной Приватности</title>
+    <title>ИСКРА | Absolute Digital Sovereignty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;900&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg: #0a0a0a;
-            --accent: #ff4d00;
-            --text: #e0e0e0;
-            --secondary: #1a1a1a;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
-            border-bottom: 1px solid var(--accent);
-        }
-        .logo {
-            font-size: 5rem;
-            font-weight: 800;
-            letter-spacing: 15px;
-            color: var(--accent);
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-        h2 {
-            font-size: 2.5rem;
-            color: var(--accent);
-            border-left: 4px solid var(--accent);
-            padding-left: 20px;
-            margin-bottom: 40px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .card {
-            background: var(--secondary);
-            padding: 30px;
-            border-radius: 5px;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-        .card:hover {
-            border-color: var(--accent);
-            transform: translateY(-5px);
-        }
-        .card h3 {
-            color: var(--accent);
-            margin-top: 0;
-        }
-        .highlight {
-            color: var(--accent);
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.8rem;
-            opacity: 0.5;
-            border-top: 1px solid #333;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 40px;
-            background: var(--accent);
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-radius: 3px;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #fff; scroll-behavior: smooth; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .accent-gradient { background: linear-gradient(90deg, #ff4d00, #ff8700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .border-glow { border: 1px solid rgba(255, 77, 0, 0.3); box-shadow: 0 0 20px rgba(255, 77, 0, 0.1); }
+        .hero-bg { background: radial-gradient(circle at 50% 50%, #1a0f00 0%, #050505 100%); }
     </style>
 </head>
-<body>
+<body class="antialiased">
 
-<header>
-    <div class="logo">ИСКРА</div>
-    <p style="font-size: 1.5rem; max-width: 700px;">
-        Первое и единственное на планете абсолютно приватное независимое решение.
-    </p>
-    <a href="#about" class="btn">Инициализировать протокол</a>
-</header>
+    <nav class="fixed w-full z-50 px-6 py-4 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-orange-600">ИСКРА</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium mono uppercase tracking-widest text-gray-400">
+                <a href="#tech" class="hover:text-orange-500 transition">Технологии</a>
+                <a href="#features" class="hover:text-orange-500 transition">Функционал</a>
+                <a href="#compare" class="hover:text-orange-500 transition">Аналоги</a>
+            </div>
+            <button class="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 text-xs font-bold uppercase tracking-tighter transition">Connect</button>
+        </div>
+    </nav>
 
-<section class="container" id="about">
-    <h2>Беспрецедентная Технология</h2>
-    <p>Проект <span class="highlight">ИСКРА</span> — это не просто инструмент, это архитектурный сдвиг. Мы создали комплекс технологий, который делает классические методы блокировки, фильтрации трафика или деанонимизации технически невозможными.</p>
-    
-    <div class="grid">
-        <div class="card">
-            <h3>Hardwire Stealth</h3>
-            <p>Наш протокол маскирует трафик под хаотичный белый шум, который невозможно идентифицировать методами DPI (Deep Packet Inspection).</p>
+    <header class="hero-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="text-center px-6">
+            <div class="mono text-orange-500 text-sm mb-4 tracking-[0.5em] uppercase">Status: Operational</div>
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter">
+                <span class="accent-gradient">ИСКРА</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
+                Первое на планете абсолютно приватное независимое решение. Мы создали комплекс, который делает блокировку технически невозможной.
+            </p>
+            <div class="mt-12 flex flex-col md:flex-row justify-center gap-4">
+                <a href="#tech" class="bg-white text-black px-10 py-4 font-bold uppercase text-sm hover:bg-orange-500 hover:text-white transition">Запустить протокол</a>
+                <a href="#" class="border border-white/10 px-10 py-4 font-bold uppercase text-sm hover:bg-white/5 transition">Whitepaper</a>
+            </div>
         </div>
-        <div class="card">
-            <h3>Zero-Trust Core</h3>
-            <p>Система не доверяет ни одному узлу связи. Данные фрагментируются и передаются по динамическим цепочкам, исключая централизацию.</p>
-        </div>
-        <div class="card">
-            <h3>Квантовая устойчивость</h3>
-            <p>Использование алгоритмов шифрования, устойчивых к дешифровке даже перспективными вычислительными мощностями.</p>
-        </div>
-    </div>
-</section>
+    </header>
 
-<section class="container" style="background: var(--secondary);">
-    <h2>Функционал системы</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Интеллектуальный обход</h3>
-            <p>Автоматическая адаптация под текущую топологию сети. Блокировки распознаются и обходятся в реальном времени без участия пользователя.</p>
-        </div>
-        <div class="card">
-            <h3>Абсолютная изоляция</h3>
-            <p>Ваша активность остается внутри зашифрованного периметра. Ни провайдер, ни внешние трекеры не получают доступа даже к метаданным.</p>
-        </div>
-        <div class="card">
-            <h3>Мгновенный отклик</h3>
-            <p>Несмотря на многослойное шифрование, ИСКРА оптимизирует маршруты для достижения минимальных задержек (Latency).</p>
-        </div>
-    </div>
-</section>
-
-<section class="container">
-    <h2>Преимущества над аналогами</h2>
-    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-        <thead>
-            <tr style="text-align: left; border-bottom: 2px solid var(--accent);">
-                <th style="padding: 15px;">Параметр</th>
-                <th style="padding: 15px;">Обычные VPN/Proxy</th>
-                <th style="padding: 15px; color: var(--accent);">ИСКРА</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="border-bottom: 1px solid #333;">
-                <td style="padding: 15px;">Устойчивость к DPI</td>
-                <td style="padding: 15px;">Низкая (легко блокируется)</td>
-                <td style="padding: 15px;">Абсолютная</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #333;">
-                <td style="padding: 15px;">Логирование</td>
-                <td style="padding: 15px;">Часто присутствует</td>
-                <td style="padding: 15px;">Технически невозможно</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #333;">
-                <td style="padding: 15px;">Зависимость от ЦОД</td>
-                <td style="padding: 15px;">Высокая</td>
-                <td style="padding: 15px;">Полная децентрализация</td>
-            </tr>
-            <tr>
-                <td style="padding: 15px;">Срок жизни соединения</td>
-                <td style="padding: 15px;">До момента блокировки IP</td>
-                <td style="padding: 15px;">Неограничен</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<footer>
-    © 2026 ИСКРА. Настоящая приватность требует радикальных решений.
-</footer>
-
-</body>
-</html>
+    <section id="tech" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 tracking-tight italic uppercase">Беспрецедентные технологии</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-8 bg-zinc-900/50 border-glow">
+                    <div class="text-orange-600 mb-6 font-black text-4xl">01</div>
+                    <h3 class="text-xl font-bold mb-4 uppercase">Hardwire Stealth</h3>
+                    <p class="text-gray-500 leading-relaxed text-sm">Полная мимикрия трафика под белый шум. Системы DPI не находят паттернов для блокировки.</p>
+                </div>
+                <div class="card p-8 bg-zinc
 
